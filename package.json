@@ -1,0 +1,33 @@
+{
+  "name": "chaska",
+  "description": "Chaska client application for POS",
+  "version": "1.0.0",
+  "author": {
+    "name": "Juan Martinez"
+  },
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "rm -rf dist && electron-builder build"
+  },
+  "build": {
+    "appId": "eu.chaska.pos",
+    "productName": "Chaska",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.1.6",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "electron-store": "^8.2.0",
+    "net": "^1.0.2"
+  }
+}
